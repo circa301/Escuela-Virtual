@@ -148,6 +148,7 @@ overflow: hidden;
 }
 
 .contenido1 section {
+	margin-top: 0;
 	width: 430px;
 	height: 625px;
 }
