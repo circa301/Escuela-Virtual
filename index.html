@@ -3,66 +3,85 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="styles.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script src="transiciones.js"></script>
+		<script src="https://kit.fontawesome.com/938f89a9b5.js" crossorigin="anonymous"></script>
 		<title>Escuela Virtual</title>
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300;1,400;1,700&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<div class="visor">
-			<div class="portada">
-				<section>
-					<h1>Escuela Virtual de</h1>
-					<img src="images/balanza.png" alt="balanza.png">
-					<h1 class="abajo">Sostenibilidad Empresarial</h1>
-				</section>
-			</div>
-			<div class="introduccion">
-				<section>
-						<div class="leer" id="leer">
-						<span class="cancel"><img src="images/boton1.png" alt="cancel.png" id="cancel"></span>
-						<span>Nuestros programas estan especialmente diseñados para incentivar en los participantes su responsabilidad social, continua creatividad y ante todo el pensamiento humano y social queredunde en el bienestar y crecimiento como comunidad.</span>
-						<span>Asi mismo para generar sinergias en la vida empresarial que permita la preparación ante la incertidumbre y el caos de la vida cotidiana.</span>
-						<img src="images/imagen3.png" alt="sinergia.png">
+		<div class="slideShow">
+			<div class="slider" id="limite">
+				<section class="contenedor " id="div">
+					<div class="portada">
+						<section>
+							<h1>Escuela Virtual de</h1>
+							<img src="images/balanza.png" alt="balanza.png">
+							<h1 class="abajo">Sostenibilidad Empresarial</h1>
+						</section>
 					</div>
-					<h1>¿Qué pasara mañana, en unos meses o quizas años?</h1>
-					<table>
-						<tr>
-							<td><span>vivimos en un mundo lleno de incertidumbres, que requieren una preparación constante, es tiempo de pensar no solo en las necesidades presentes, sino en las futuras, de tal manera que se garantice un equilibrio entre el crecimiento tanto económico como social, cuidando los recursos naturales y el bienestar de las comunidades</span></td>
-							<td><img src="images/imagen1.jpg" alt="carretera.jpg" width="140px"></td>
-						</tr>
-						<tr>
-							<td><img src="images/imagen2.png" alt="helices.jpg" width="140px"></td>
-							<td>
-								<span>¡Es ahora o nunca! la decisión... Un aprendizaje continuo y experiencial que nos fortalezca como comunidad</span>
-								<span><input type="submit" value="Leer Más" class="boton1" id="leerMas"></span>
-							</td>
-						</tr>
-					</table>
-
+				</section>
+				<section class="contenedor">
+					<div class="introduccion">
+						<section>
+							<span>
+								<h1>¿Qué pasara mañana, en unos meses o quizas años?</h1>
+							</span>
+							<table>
+								<tr>
+									<td><span>vivimos en un mundo lleno de incertidumbres, que requieren una preparación constante, es tiempo de pensar no solo en las necesidades presentes, sino en las futuras, de tal manera que se garantice un equilibrio entre el crecimiento tanto económico como social, cuidando los recursos naturales y el bienestar de las comunidades</span></td>
+									<td><img src="images/imagen1.jpg" alt="carretera.jpg" width="140px"></td>
+								</tr>
+								<tr>
+									<td><img src="images/imagen2.png" alt="helices.jpg" width="140px"></td>
+									<td class="leerM">
+										<span>¡Es ahora o nunca! la decisión... Un aprendizaje continuo y experiencial que nos fortalezca como comunidad</span>
+										<span><input type="submit" value="Leer Más" class="boton1" id="leerMas"></span>
+									</td>
+								</tr>
+							</table>
+							<section class="leer" id="leer">
+								<span class="cancel"><img src="images/boton1.png" alt="cancel.png" id="cancel"></span>
+								<span>Nuestros programas estan especialmente diseñados para incentivar en los participantes su responsabilidad social, continua creatividad y ante todo el pensamiento humano y social queredunde en el bienestar y crecimiento como comunidad.</span>
+								<span>Asi mismo para generar sinergias en la vida empresarial que permita la preparación ante la incertidumbre y el caos de la vida cotidiana.</span>
+								<img src="images/imagen3.png" alt="sinergia.png">
+							</section>
+						</section>
+					</div>
+				</section>
+				<section class="contenedor">
+					<div class="contenido1">
+						<section>
+							<span>
+								<h1>Transformando el camino de la Educacón</h1>
+							</span>
+							<table>
+								<tr class="linea">
+									<td>
+										<p>La Escuela Virtual de Sostenibilidad Empresarial surge con el proposito de despertar en el mundo de los negocios el sentido humano y social.</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Es por ello que integramos un aprendizaje diferente, dejando de lado la individualidad y la competencia,  involucrando la empatia, con el fin de prepararnos para enfrentar las incertidumbres y lograr una sinergia entre las comunidades para una permanente busqueda del desarrollo sostenible.</p>
+									</td>
+								</tr>
+								<tr class="transiciones">
+									<td><img src="images/img1.png" alt="img1" width="100px" class="imagen"></td>
+									<td><img src="images/img2.png" alt="img2" width="100px" class="imagen"></td>
+									<td><img src="images/img3.png" alt="img3" width="100px" class="imagen"></td>
+								</tr>
+							</table>
+						</section>
+					</div>
 				</section>
 			</div>
-			<div class="contenido1">
-				<section>
-					<h1>Transformando el camino de la Educacón</h1>
-					<table>
-						<tr>
-							<td>
-								<p>La Escuela Virtual de Sostenibilidad Empresarial surge con el proposito de despertar en el mundo de los negocios el sentido humano y social.</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>Es por ello que integramos un aprendizaje diferente, dejando de lado la individualidad y la competencia,  involucrando la empatia, con el fin de prepararnos para enfrentar las incertidumbres y lograr una sinergia entre las comunidades para una permanente busqueda del desarrollo sostenible.</p>
-							</td>
-						</tr>
-						<tr class="transiciones">
-							<td><img src="images/img1.png" alt="img1" width="100px"></td>
-							<td><img src="images/img2.png" alt="img2" width="100px"></td>
-							<td><img src="images/img3.png" alt="img3" width="100px"></td>
-						</tr>
-					</table>
-				</section>
-			</div>
+		</div>
+	  <div class="left">
+		  <span class="fas fa-chevron-left"></span>
+		</div>
+		<div class="rigth">
+		  <span class="fas fa-chevron-right"></span>				
 		</div>
 	</body>
 </html>

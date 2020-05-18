@@ -1,3 +1,25 @@
+/*@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ixofpc');
+  src:  url('fonts/icomoon.eot?ixofpc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ixofpc') format('truetype'),
+    url('fonts/icomoon.woff?ixofpc') format('woff'),
+    url('fonts/icomoon.svg?ixofpc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.icon-previous2:before {
+  content: "\ea23";
+}
+.icon-next2:before {
+  content: "\ea24";
+}*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: #386598;
 	margin: 0px;
@@ -6,20 +28,60 @@ body {
 	right: 0;
 	top: 0;
 	bottom: 0;
-}
-
-.visor {
 	overflow: hidden;
 }
+
+.slideShow {
+	width: 100%;
+	position: relative;
+	/*overflow: hidden;*/
+}
+
+.slider div {
+	display: flex;
+	width: 1366px;
+}
+
+.left, .rigth {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: #000;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.left {
+	left: 20px;
+}
+
+.rigth {
+	right: 20px;
+}
+
+.slider {
+	display: flex;
+	overflow: hidden;
+}
+
+.contenedor {
+	width: 1366px;
+	position: absolute;
+
+}
+
 
 section {
 	width: 430px;
 	height: 585px;
-	margin: auto;
-	margin-top: 20px;	
+	margin: auto;	
 }
 .portada {
-	height: 605px;	
+	height: 605px;
+	position: absolute;
+	margin-top: 10px;
 }
 
 .portada section {
@@ -56,11 +118,15 @@ overflow: hidden;
 
 .introduccion{
     background: linear-gradient(90deg, #386598, #0066cc 24.61%, #3399cc 81.08%, #ccccff);
+    position: absolute;
+    left: 1366px;
     height: 625px;
 }
+
 .introduccion section {
 	width: 430px;
 	margin: auto;
+	z-index: 1;
 }
 
 .introduccion h1 {
@@ -72,12 +138,12 @@ overflow: hidden;
 }
 
 .introduccion table {
+	margin: auto;
 	padding-top: 110px;
 }
 
 .introduccion tr{
 	width: 410px;
-	padding: 10px;
 	display:block;
 }
 
@@ -96,7 +162,7 @@ overflow: hidden;
 	width: 110px;
 	height: 30px;
 	border-radius: 10px;
-	border-color: wheat;
+	border-color: #ffffcc;
 	text-align: center;
 	font-size: 20px;
 	background-color: transparent;
@@ -104,20 +170,15 @@ overflow: hidden;
 }
 
 .leer {
-	background-color: white;
+	display: none;
+	background-color: #ffffcc;
 	width: 390px;
-	height: 585px;
+	height: 571px;
 	border-radius: 20px;
-	margin: auto;
 	position: absolute;
+	top: 20px;
 	left: 0;
 	right: 0;
-	margin-top: 22px;
-	z-index: -1;
-}
-
-.leer.active{
-	z-index: 1;
 }
 
 .leer span {
@@ -145,6 +206,8 @@ overflow: hidden;
 
 .contenido1 {
 	background-color: #ffffcc;
+	position: absolute;
+	left: 2732px;
 }
 
 .contenido1 section {
@@ -170,8 +233,30 @@ overflow: hidden;
 	color: #386598;
 }
 
+.contenido1 tbody {
+	display: flex;
+	flex-direction: column;
+}
+
+.linea {
+	border-bottom: #386598 1px solid;
+}
+
+.contenido1 tr {
+	padding: 30px 0;
+}
+
 .transiciones {
 	display: flex;
 	justify-content: space-around;
-	padding-top: 50px;
+	padding: 0;
+}
+
+.imagen {
+	transform: rotate(0deg);
+}
+
+.animacion{
+	transition: 3s;
+	transform: rotate(360deg);
 }
