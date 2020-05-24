@@ -67,6 +67,42 @@ $(document).ready(function(){
   $(".leer").hide();
   }
 
+  $(".soc").hover(
+    function() {
+      $(".tipos").show();
+      $(".social h1").show();
+      $(".social p").show();
+    },
+    function() {
+      $(".tipos").hide();
+      $(".social h1").hide();
+      $(".social p").hide();
+    });
+
+  $(".emc").hover(
+    function() {
+      $(".tipos").show();
+      $(".emocional h1").show();
+      $(".emocional p").show();
+    },
+    function() {
+      $(".tipos").hide();
+      $(".emocional h1").hide();
+      $(".emocional p").hide();
+    });
+
+  $(".exp").hover(
+    function() {
+      $(".tipos").show();
+      $(".experencial h1").show();
+      $(".experencial p").show();
+    },
+    function() {
+      $(".tipos").hide();
+      $(".experencial h1").hide();
+      $(".experencial p").hide();
+    });
+
 });
 // Lazy Loading
 /*var bLazy = new Blazy({

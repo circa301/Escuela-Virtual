@@ -29,6 +29,7 @@ body {
 	top: 0;
 	bottom: 0;
 	overflow: hidden;
+	cursor: context-menu;
 }
 
 .slideShow {
@@ -117,7 +118,7 @@ overflow: hidden;
 }
 
 .introduccion{
-    background: linear-gradient(90deg, #386598, #0066cc 24.61%, #3399cc 81.08%, #ccccff);
+    background: linear-gradient(90deg, #386598, #0066cc 24.61%, #3399cc 81.08%, #ffffcc);
     position: absolute;
     left: 1366px;
     height: 625px;
@@ -250,13 +251,48 @@ overflow: hidden;
 	display: flex;
 	justify-content: space-around;
 	padding: 0;
-}
-
-.imagen {
-	transform: rotate(0deg);
+	cursor: pointer;
 }
 
 .animacion{
 	transition: 3s;
 	transform: rotate(360deg);
+}
+
+.tipos {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 30px;
+	margin: auto;
+	width: 338px;
+	height: 140px;
+	background-color: #0064FF;
+	border-radius: 100px;
+}
+
+.tipos h1 {
+	display: none;
+	color: black;
+	padding: 0;
+	font-size: 22px;
+	width: 300px;
+}
+
+.tipos p {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding-top: 45px;
+	width: 230px;
+	color: black;
+	font-family: sans-serif;
+	font-size: 13px;	
+}
+
+.experencial p {
+	font-size: 12.5px;
 }
