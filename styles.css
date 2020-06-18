@@ -40,7 +40,7 @@ body {
 
 .slider div {
 	display: flex;
-	width: 1366px;
+	width: 100%;
 }
 
 .left, .rigth {
@@ -68,7 +68,7 @@ body {
 }
 
 .contenedor {
-	width: 1366px;
+	width: 100%;
 	position: absolute;
 
 }
@@ -152,7 +152,7 @@ overflow: hidden;
 	padding: 10px;
 	text-align: justify;
 	font-weight: 600;
-	color: wheat;
+	color: #ffffcc;
 	font-size: 16px;
 }
 
@@ -295,4 +295,39 @@ overflow: hidden;
 
 .experencial p {
 	font-size: 12.5px;
+}
+
+.contenido2 {
+	background: linear-gradient(270deg, #386598, #0066cc 24.61%, #3399cc 81.08%, #ffffcc);
+    position: absolute;
+    left: 4098px;
+    height: 625px;
+}
+
+.contenido2 section {
+	margin-top: 0;
+	width: 430px;
+	height: 625px;
+}
+
+.contenido2 h1 {
+	text-align: center;
+	font-size: 31.5px;
+	margin: auto;
+	width: 400px;
+	color: #ffffcc;
+}
+
+.contenido2 img {
+	margin-top: 100px;
+	border-radius: 20px;
+}
+
+.contenido2 p {
+	padding: 5px;
+	padding-top: 30px;
+	text-align: justify;
+	font-weight: 600;
+	color: #ffffcc;
+	font-size: 16px
 }
