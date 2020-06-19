@@ -1,9 +1,13 @@
 /*src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"
 src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"*/
   var indicador = 1;
+  
+$( document ).ready(function(){
 
-$(document).ready(function(){
-
+  console.log($(window).width());
+  var ancho = $(window).width() + "px";
+  console.log(ancho)
+    
   //Cambio de pantallas (Slide)
   $(".left span").hide()
   
@@ -19,27 +23,35 @@ $(document).ready(function(){
 
   function next() {
       
+    var tres = 3
     var limite = $(".contenedor div").length;  
-    $(".contenedor div").animate({"left":"-=1366px"}, 500);
+    $(".contenedor div").animate({"left": "-=1366px" }, 500);
     $(".left span").show()
     hidediv();
+    console.log(indicador);
 
     if (indicador >= limite) {
       $(".rigth span").hide();
-      $(".transiciones img").addClass("animacion");
+    }
 
+     else {
+      $(".rigth span").show();
+      $(".left span").show();
+    };
+
+    if (indicador != tres) {
+     $(".transiciones img").removeClass("animacion"); 
     }
 
     else {
-      $(".rigth span").show();
-      $(".left span").show();
-      $(".transiciones img").removeClass("animacion");
-    };
-    
+      $(".transiciones img").addClass("animacion");
+    }
+
   }
 
   function prev() {
 
+    var tres = 3
     $(".transiciones img").removeClass("animacion");
     $(".contenedor div").animate({"left":"+=1366px"}, 500);
     hidediv();
@@ -52,6 +64,16 @@ $(document).ready(function(){
       $(".rigth span").show()
       $(".left span").show();
     };
+
+
+    if (indicador != tres) {
+     $(".transiciones img").removeClass("animacion"); 
+    }
+
+    else {
+      $(".transiciones img").addClass("animacion");
+    }
+
   }
 
   // botones introduccion
@@ -67,19 +89,25 @@ $(document).ready(function(){
   $(".leer").hide();
   }
 
-  $(".soc").hover(
+  //Tipos de Aprendizaje
+
+
+  console.log ($("#soc"))
+
+  $("#soc").hover(
     function() {
       $(".tipos").show();
       $(".social h1").show();
       $(".social p").show();
     },
+
     function() {
       $(".tipos").hide();
       $(".social h1").hide();
       $(".social p").hide();
     });
 
-  $(".emc").hover(
+  $("#emc").hover(
     function() {
       $(".tipos").show();
       $(".emocional h1").show();
@@ -91,7 +119,7 @@ $(document).ready(function(){
       $(".emocional p").hide();
     });
 
-  $(".exp").hover(
+  $("#exp").hover(
     function() {
       $(".tipos").show();
       $(".experencial h1").show();

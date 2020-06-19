@@ -254,6 +254,13 @@ overflow: hidden;
 	cursor: pointer;
 }
 
+.soc {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: #0064FF;
+}
+
 .animacion{
 	transition: 3s;
 	transform: rotate(360deg);
@@ -330,4 +337,113 @@ overflow: hidden;
 	font-weight: 600;
 	color: #ffffcc;
 	font-size: 16px
+}
+
+.contenido3 {
+	position: absolute;
+    left: 5464px;
+    height: 625px;
+}
+
+.contenido3 section {
+	background-color: #fff;
+	border-radius: 20px;
+	margin-top: 30px;
+	width: 430px;
+	height: 625px;
+}
+
+.contenido3 h1 {
+	text-align: center;
+	font-size: 31.5px;
+	margin: auto;
+	width: 400px;
+	color: #386598;
+}
+
+.programas {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+.programas h3 {
+	width: 270px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.programas p {
+	width: 220px;
+    margin: auto;
+    text-align: center;
+}
+
+.circulo {
+	border-radius: 150px;
+    border-style: dotted;
+    border-color: #66cc66;
+    position: absolute;
+    margin: auto;
+    background: #fff;
+}
+
+.programas h2 {
+	width: 50px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.uno {
+	top: -25px;
+    left: 0;
+    right: 0;
+    width: 50px;
+    z-index: 1;
+}
+
+.dos {
+	right: -25px;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+}
+
+.tres {
+	bottom: -35px;
+    left: 0;
+    right: 0;
+    width: 50px;
+}
+
+.cuatro {
+	left: -25px;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+    z-index: 1;
+}
+
+.primero {
+	display: none;
+}
+
+.segundo {
+	display: none;
+}
+
+.tercero {
+	display: none;
+}
+
+.cuarto {
+	display: none;
 }
