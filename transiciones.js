@@ -4,9 +4,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"*/
   
 $( document ).ready(function(){
 
-  console.log($(window).width());
-  var ancho = $(window).width() + "px";
-  console.log(ancho)
+  // console.log($(window).width());
+  // var ancho = $(window).width() + "px";
+  // console.log(ancho)
     
   //Cambio de pantallas (Slide)
   $(".left span").hide()
@@ -24,14 +24,15 @@ $( document ).ready(function(){
   function next() {
       
     var tres = 3
-    var limite = $(".contenedor div").length;  
+    var limite = $(".slider .contenedor").length; 
+    console.log(limite) 
     $(".contenedor div").animate({"left": "-=1366px" }, 500);
     $(".left span").show()
     hidediv();
     cerrar();
     console.log(indicador);
 
-    if (indicador >= limite) {
+    if (indicador == limite) {
       $(".rigth span").hide();
     }
 
