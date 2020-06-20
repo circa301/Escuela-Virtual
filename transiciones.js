@@ -28,6 +28,7 @@ $( document ).ready(function(){
     $(".contenedor div").animate({"left": "-=1366px" }, 500);
     $(".left span").show()
     hidediv();
+    cerrar();
     console.log(indicador);
 
     if (indicador >= limite) {
@@ -52,9 +53,9 @@ $( document ).ready(function(){
   function prev() {
 
     var tres = 3
-    $(".transiciones img").removeClass("animacion");
     $(".contenedor div").animate({"left":"+=1366px"}, 500);
     hidediv();
+    cerrar();
 
     if (indicador <= 1 ) {
       $(".left span").hide() 
@@ -91,44 +92,111 @@ $( document ).ready(function(){
 
   //Tipos de Aprendizaje
 
-
-  console.log ($("#soc"))
-
-  $("#soc").hover(
+  $(".transiciones img").click(
     function() {
-      $(".tipos").show();
-      $(".social h1").show();
-      $(".social p").show();
-    },
-
-    function() {
-      $(".tipos").hide();
-      $(".social h1").hide();
-      $(".social p").hide();
+      $(".tipos").animate({"top":"2%"}, 500);
+      $(".contenido1 h1").animate({opacity: 0}, 800);
+      $(".transiciones img").addClass("mostrar");
     });
 
-  $("#emc").hover(
+  $(".cerrar img").click(cerrar);
+
+  function cerrar() {
+    $(".tipos").animate({"top":"100%"}, 500);
+    $(".contenido1 h1").animate({opacity: 1}, 800);
+    $(".transiciones img").removeClass("mostrar");
+    $(".soc").removeClass("borde");
+    $(".emc").removeClass("borde");
+    $(".exp").removeClass("borde");
+  }
+
+ $(".soc").click(
     function() {
-      $(".tipos").show();
-      $(".emocional h1").show();
-      $(".emocional p").show();
-    },
-    function() {
-      $(".tipos").hide();
-      $(".emocional h1").hide();
+      $(".emc").removeClass("borde");
+      $(".exp").removeClass("borde");
+      $(".soc").addClass("borde");
+      $(".emocional h2").hide();
       $(".emocional p").hide();
+      $(".experencial h2").hide();
+      $(".experencial p").hide();
+      $(".social h2").show();
+      $(".social p").show();
     });
 
-  $("#exp").hover(
+  $(".emc").click(
     function() {
-      $(".tipos").show();
-      $(".experencial h1").show();
-      $(".experencial p").show();
-    },
-    function() {
-      $(".tipos").hide();
-      $(".experencial h1").hide();
+      $(".soc").removeClass("borde");
+      $(".exp").removeClass("borde");
+      $(".emc").addClass("borde");
+      $(".social h2").hide();
+      $(".social p").hide();
+      $(".experencial h2").hide();
       $(".experencial p").hide();
+      $(".emocional h2").show();
+      $(".emocional p").show();
+    });
+  
+  $(".exp").click(
+    function() {
+      $(".soc").removeClass("borde");
+      $(".emc").removeClass("borde");
+      $(".exp").addClass("borde");
+      $(".social h2").hide();
+      $(".social p").hide();
+      $(".emocional h2").hide();
+      $(".emocional p").hide();
+      $(".experencial h2").show();
+      $(".experencial p").show();
+    });
+
+  //programas
+
+  $(".uno").click(
+    function() {
+      $(".dos").removeClass("borde1");
+      $(".tres").removeClass("borde1");
+      $(".cuatro").removeClass("borde1");
+      $(".uno").addClass("borde1");
+      $(".info").hide();
+      $(".info").hide();
+      $(".primero").show();
+      $(".primero").show();
+    });
+
+  $(".dos").click(
+    function() {
+      $(".uno").removeClass("borde1");
+      $(".tres").removeClass("borde1");
+      $(".cuatro").removeClass("borde1");
+      $(".dos").addClass("borde1");
+      $(".info").hide();
+      $(".info").hide();
+      $(".segundo").show();
+      $(".segundo").show();
+    });
+
+  $(".tres").click(
+    function() {
+      $(".uno").removeClass("borde1");
+      $(".dos").removeClass("borde1");
+      $(".cuatro").removeClass("borde1");
+      $(".tres").addClass("borde1");
+      $(".info").hide();
+      $(".info").hide();
+      $(".tercero").show();
+      $(".tercero").show();
+    });
+
+  $(".cuatro").click(
+    function() {
+      $(".uno").removeClass("borde1");
+      $(".dos").removeClass("borde1");
+      $(".tres").removeClass("borde1");
+      $(".cuatro").addClass("borde1");
+      $(".info").hide();
+      $(".info").hide();
+      $(".cuarto").show();
+      $(".cuarto").show();
     });
 
 });

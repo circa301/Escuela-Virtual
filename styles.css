@@ -38,7 +38,7 @@ body {
 	/*overflow: hidden;*/
 }
 
-.slider div {
+.centro {
 	display: flex;
 	width: 100%;
 }
@@ -74,7 +74,7 @@ body {
 }
 
 
-section {
+.posicion {
 	width: 430px;
 	height: 585px;
 	margin: auto;	
@@ -215,6 +215,7 @@ overflow: hidden;
 	margin-top: 0;
 	width: 430px;
 	height: 625px;
+	z-index: 1;
 }
 
 .contenido1 h1 {
@@ -224,7 +225,7 @@ overflow: hidden;
 	color: #386598;
 }
 
-.contenido1 table {
+.tabla2 {
 	width: 400px;
 	margin: auto;
 	padding: 20px;
@@ -243,22 +244,20 @@ overflow: hidden;
 	border-bottom: #386598 1px solid;
 }
 
-.contenido1 tr {
+.tabla2 tr {
 	padding: 30px 0;
 }
 
 .transiciones {
 	display: flex;
 	justify-content: space-around;
-	padding: 0;
-	cursor: pointer;
+	padding: 0;	
 }
 
-.soc {
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
-	background-color: #0064FF;
+.transiciones img {
+	cursor: pointer;
+	position: relative;
+    border-radius: 50px	
 }
 
 .animacion{
@@ -266,12 +265,22 @@ overflow: hidden;
 	transform: rotate(360deg);
 }
 
+.mostrar {
+	transition: 0.5s;
+	transition-delay: 0.125S;
+    transform: translate(0, -400px);
+	z-index: 2;
+}
+
+.borde {
+	border:#66cc66 2px solid;
+}
+
 .tipos {
-	display: none;
 	position: absolute;
+	top: 100%;
 	left: 0;
 	right: 0;
-	bottom: 30px;
 	margin: auto;
 	width: 338px;
 	height: 140px;
@@ -279,29 +288,64 @@ overflow: hidden;
 	border-radius: 100px;
 }
 
-.tipos h1 {
-	display: none;
-	color: black;
-	padding: 0;
-	font-size: 22px;
-	width: 300px;
-}
-
 .tipos p {
 	display: none;
 	position: absolute;
-	left: 0;
-	right: 0;
-	margin: auto;
-	padding-top: 45px;
-	width: 230px;
-	color: black;
-	font-family: sans-serif;
-	font-size: 13px;	
+    left: 0;
+    right: 0;
+    top: 130px;
+    margin: auto;
+    width: 300px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    font-weight: 600;
 }
 
-.experencial p {
-	font-size: 12.5px;
+.cerrar img {
+	position: absolute;
+    right: -30px;
+    cursor: pointer;
+}
+
+.modelo {
+	position: absolute;
+	bottom: 30px;
+    width: 430px;
+}
+
+.modelo td {
+	padding: 20px 0;
+}
+
+.modelo h2{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #ffffcc;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 32px;
+}
+
+.modelo img {
+	position: absolute;
+	bottom: 0px;
+}
+
+.modelo h4 {
+    position: relative;
+    left: 310px;
+    padding: 10px  0px;
+}
+
+.modelo ul {
+	list-style-type: none;
+    position: relative;
+    left: 310px;
 }
 
 .contenido2 {
@@ -430,6 +474,14 @@ overflow: hidden;
     bottom: 0;
     height: 50px;
     z-index: 1;
+}
+
+.puntero {
+	cursor: pointer;
+}
+
+.borde1 {
+	border:#386598 2px solid;
 }
 
 .primero {
